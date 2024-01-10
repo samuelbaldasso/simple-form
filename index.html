@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Crie e compartilhe seu evento.</h1>
+      <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+    </header>
+
+    <form class="form">
+      <fieldset>
+        <legend>Informações do Evento</legend>
+
+        <div class="line"></div>
+        <div class="form-field">
+          <label for="title"
+            >Título do evento <span>(mínimo 8 caracteres)</span></label
+          >
+          <input name="title" id="title" type="text" />
+        </div>
+
+        <div class="form-field">
+          <label for="link"
+            >Link do evento <span>(comece com https://)</span></label
+          >
+          <input name="link" id="link" type="text" />
+        </div>
+
+        <div class="form-field">
+          <label for="whats"
+            >Whatsapp para contato <span>(somente números)</span></label
+          >
+          <input name="whats" id="whats" type="tel" />
+        </div>
+
+        <div class="textarea-field">
+          <label for="textarea">Informações extras </label>
+          <textarea cols="80" id="textarea" name="textarea"></textarea>
+        </div>
+
+        <div class="select-field">
+          <label for="select">Categorias </label>
+          <select name="select" id="select" aria-placeholder="Tipo do evento">
+            <option value="mentoria">Mentorias</option>
+            <option value="live">Lives</option>
+            <option value="aulas">Aulas online</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Privacidade</legend>
+
+        <div class="line"></div>
+        <div class="form-field">
+          <label for="admin"
+            >Email do administrador </span>(digite um email válido)</span></label
+          >
+          <input name="admin" id="admin" type="text" />
+        </div>
+
+        <div class="form-field">
+          <label for="password"
+            >Senha de acesso para os participantes </span>(mínimo 8 caracteres)</span></label
+          >
+          <input name="password" id="password" type="text" />
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox">Evento privado</label>
+        </div>
+      
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dia e hora</legend>
+
+        <div class="line"></div>
+        <div class="date-form-fields">
+          <div class="form-field">
+            <label for="date"
+              >Data</label
+            >
+            <input name="date" id="date" type="date" />
+          </div>
+  
+          <div class="form-field">
+            <label for="time-start"
+              >Das</label
+            >
+            <input name="time-start" id="time-start" type="time"/>
+          </div>
+  
+          <div class="form-field">
+            <label for="time-end"
+              >Até</label
+            >
+            <input name="time-end" id="time-end" type="time"/>
+          </div>
+        </div>
+        </fieldset>
+    </form>
+
+    <footer>
+      <button type="submit">Salvar evento</button>
+    </footer>
+  </body>
+</html>
